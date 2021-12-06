@@ -1,0 +1,35 @@
+\section*{Оценка сложности}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Метод & Оценка сложности \\
+        \hline
+        \verb|contains(self, value: int) -> bool:| & \textit{O($ \log{n} $)} \\
+        \hline
+        \verb|insert(self, value: int) -> BstNode:| & \textit{O($ \log{n} $)} \\
+        \hline
+        \verb|remove(self, value: int) -> None:| & \textit{O($ \log{n} $)} \\
+        \hline
+        \verb|get(self, value, default=None) -> Optional[BstNode]:| & \textit{O($ \log{n} $)} \\
+        \hline
+        \verb|get_parent(self, value, default=None) -> Optional[BstNode]:| & \textit{O($ \log{n} $)} \\
+        \hline
+        \verb|dft(self, type: str = 'inorder') -> Generator:| & - \\
+        \hline
+        \verb|bft(self) -> Generator:| & \textit{O($ n $)} \\
+        \hline
+        \verb|_inorder(self, node) -> Generator:| & \textit{O($ n $)} \\
+        \hline
+        \verb|_preorder(self, node) -> Generator:| & \textit{O($ n $)} \\
+        \hline
+        \verb|_postorder(self, node) -> Generator:| & \textit{O($ n $)} \\
+        \hline
+        \verb|_height(self, node) -> int:| & \textit{O($ n $)} \\
+        \hline
+        \verb|get_max_node(node) -> Optional[BstNode]:| & \textit{O($ \log{n} $)} \\
+        \hline
+    \end{tabular}
+    \label{tab:complexity}
+\end{table}
